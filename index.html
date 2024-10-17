@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megratronus Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Megratronus Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#games">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offers">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header class="hero-section text-center text-black d-flex align-items-center justify-content-center" id="home">
+        <div class="hero-content">
+            <h1 class="animate-fadeIn">Bienvenido a Megratronus Store</h1>
+            <p class="animate-slideUp">¡Tu tienda de videojuegos de confianza!</p>
+            <a href="#games" class="btn btn-warning btn-lg animate-bounce">Compra Ahora</a>
+        </div>
+    </header>
+
+    <!-- Games Section -->
+    <section class="container my-5" id="games">
+        <h2 class="text-center animate-zoomIn">Nuestros Juegos</h2>
+        <div class="row text-center" id="game-list">
+            <!-- Las tarjetas de juegos se insertarán aquí mediante JavaScript -->
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="container my-5" id="offers">
+        <h2 class="text-center animate-zoomIn">Ofertas Especiales</h2>
+        <div class="row text-center" id="offer-list">
+            <!-- Las tarjetas de ofertas se insertarán aquí mediante JavaScript -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container-fluid bg-light py-5" id="contact">
+        <div class="container">
+            <h2 class="text-center animate-zoomIn mb-4">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Enviar Mensaje</button>
+                    </form>
+                    <div id="form-message" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Megratronus Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
